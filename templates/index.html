@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>EduGenie AI</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>EduGenie AI</h1>
+
+            <p>
+                Your AI-powered learning assistant
+            </p>
+        </header>
+
+
+        <main class="card">
+
+            <label for="task">
+                Choose a learning task
+            </label>
+
+            <select id="task">
+
+                <option value="qa">
+                    Ask a Question
+                </option>
+
+                <option value="explain">
+                    Explain a Topic
+                </option>
+
+                <option value="quiz">
+                    Generate Quiz
+                </option>
+
+                <option value="summarize">
+                    Summarize Text
+                </option>
+
+                <option value="learning">
+                    Recommend Learning Path
+                </option>
+
+            </select>
+
+
+            <label for="inputText">
+                Enter your question, topic, or text
+            </label>
+
+            <textarea
+                id="inputText"
+                rows="10"
+                placeholder="Type your question or learning content here..."
+            ></textarea>
+
+
+            <button
+                id="submitButton"
+                type="button"
+            >
+                Generate
+            </button>
+
+
+            <div
+                id="loading"
+                class="loading hidden"
+            >
+                EduGenie is thinking...
+            </div>
+
+
+            <section
+                id="result"
+                class="result"
+            >
+
+                <h2>Result</h2>
+
+                <div id="resultContent">
+                    Your result will appear here.
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer class="footer">
+
+            <p>
+                EduGenie AI - Learn smarter, step by step.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script
+        src="/static/js/app.js"
+    ></script>
+
+</body>
+
+</html>
